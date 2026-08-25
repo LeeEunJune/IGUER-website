@@ -29,8 +29,8 @@ a {
 ========================= */
 
 .site-header {
-    background: #f2f2f1;
-    border-bottom: 1px solid #e3e3e1;
+    background: #f7f7f5;
+    border-bottom: 1px solid #e5e5e2;
 }
 
 .navbar {
@@ -76,7 +76,7 @@ a {
 
 .hero {
     min-height: 600px;
-    background: #174d78;
+    background: #06264a;
     color: #ffffff;
 
     display: flex;
