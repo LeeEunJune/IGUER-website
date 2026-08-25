@@ -194,60 +194,39 @@ a {
 
 
 /* =========================
-   EVENT
+   NEWS & UPDATES
 ========================= */
 
-.event {
-    min-height: 245px;
-
-    display: grid;
-    grid-template-columns: 105px 1fr;
-    gap: 1.6rem;
-
-    padding: 2.3rem 0;
+.news-item {
+    padding: 1.7rem 0;
 }
 
-.event-date {
-    display: flex;
-    flex-direction: column;
+.news-date {
+    margin-bottom: 0.7rem;
+
+    color: #174d78;
+
+    font-size: 0.67rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 }
 
-.month {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.85rem;
-}
-
-.day {
-    color: #163d66;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 2rem;
-    line-height: 1.2;
-}
-
-.year {
-    margin-top: 0.45rem;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.8rem;
-}
-
-.event-content h3 {
+.news-item h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 1.45;
 }
 
-.event-content p {
-    margin-top: 1.8rem;
+.news-description {
+    margin-top: 0.7rem;
 
     color: #666666;
 
-    font-size: 0.76rem;
-    line-height: 1.7;
+    font-size: 0.78rem;
+    line-height: 1.65;
 }
-
 
 /* =========================
    PUBLICATIONS
