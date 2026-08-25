@@ -735,6 +735,10 @@ a {
     border-top: 1px solid #cfcfcf;
 }
 
+.major-accordion + .major-accordion {
+    margin-top: 3.5rem;
+}
+
 .major-accordion summary {
     min-height: 82px;
 
