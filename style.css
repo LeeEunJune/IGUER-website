@@ -555,12 +555,12 @@ a {
 /* ABOUT CONTENT */
 
 .about-main {
-    width: min(1380px, 74%);
+    width: min(1380px, 82%);
     margin: 0 auto;
 }
 
 .about-section {
-    padding: 3.8rem 0;
+    padding: 2.8rem 0;
     border-bottom: 1px solid #d7d7d7;
 }
 
@@ -573,7 +573,8 @@ a {
 }
 
 .about-content {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .about-content h2 {
@@ -587,20 +588,19 @@ a {
 }
 
 .about-content > p {
-    max-width: 800px;
-    margin-bottom: 1.2rem;
+    max-width: 1100px;
+    margin-bottom: 1rem;
 
     color: #555555;
-
     font-size: 0.98rem;
-    line-height: 1.85;
+    line-height: 1.75;
 }
-
 
 /* SCOPE */
 
 .scope-grid {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1100px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -632,7 +632,8 @@ a {
 /* HISTORY */
 
 .timeline {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1100px;
 
     margin-top: 2.5rem;
 
