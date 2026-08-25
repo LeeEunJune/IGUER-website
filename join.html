@@ -405,9 +405,32 @@
                                 experience.
                             </p>
                         </div>
+
+                        <div class="privacy-block">
+                            <h4>3. Optional Information</h4>
+                        
+                            <p>
+                                Applicants may optionally provide a short motivation statement
+                                and a CV. These materials may be used to assess eligibility for
+                                Researcher or Senior Member status.
+                            </p>
+                        
+                            <p>
+                                Providing this information is voluntary. Applicants who do not
+                                provide optional information may still apply for general IGUER
+                                membership. However, information that is not provided cannot be
+                                considered when assessing eligibility for Researcher or Senior
+                                Member status.
+                            </p>
+                        
+                            <p>
+                                Optional information will be deleted within three months after
+                                notification of the application result.
+                            </p>
+                        </div>
                 
                         <div class="privacy-block">
-                            <h4>3. Retention and Disposal</h4>
+                            <h4>4. Retention and Disposal</h4>
                 
                             <p>
                                 <strong>Successful applicants:</strong>
@@ -432,7 +455,7 @@
                         </div>
                 
                         <div class="privacy-block">
-                            <h4>4. Right to Refuse Consent</h4>
+                            <h4>5. Right to Refuse Consent</h4>
                             <p>
                                 Applicants have the right to refuse consent to the collection
                                 and use of their personal information. However, the information
@@ -443,7 +466,34 @@
                         </div>
                 
                     </div>
-                
+
+                    <label class="privacy-checkbox">
+                        <input
+                            type="checkbox"
+                            name="optional_information_consent"
+                            value="Agreed"
+                        >
+                        <span>
+                            I agree to the collection and use of the optional information
+                            I provide, including my Short Motivation and CV.
+                            <strong>(Optional)</strong>
+                        </span>
+                    </label>
+                    
+                    <label class="privacy-checkbox">
+                        <input
+                            type="checkbox"
+                            name="privacy_consent"
+                            value="Agreed"
+                            required
+                        >
+                        <span>
+                            I have read and agree to the collection and use of my personal
+                            information as described above.
+                            <strong>(Required)</strong>
+                        </span>
+                    </label>
+                    
                     <label class="privacy-checkbox">
                         <input
                             type="checkbox"
@@ -545,6 +595,41 @@
                 button.setAttribute('aria-expanded', 'false');
             }
         }
+
+        const motivationField = document.getElementById('motivation');
+        const portfolioField = document.getElementById('portfolio');
+        const optionalConsent = document.querySelector(
+            'input[name="optional_information_consent"]'
+        );
+        
+        function updateOptionalConsentRequirement() {
+            const motivationProvided =
+                motivationField.value.trim() !== '';
+        
+            const portfolioProvided =
+                portfolioField.value.trim() !== '';
+        
+            const optionalInformationProvided =
+                motivationProvided || portfolioProvided;
+        
+            // Short Motivation 또는 CV/Portfolio가 입력되었을 때만
+            // Optional 개인정보 동의를 필수로 변경
+            optionalConsent.required = optionalInformationProvided;
+        }
+        
+        motivationField.addEventListener(
+            'input',
+            updateOptionalConsentRequirement
+        );
+        
+        portfolioField.addEventListener(
+            'input',
+            updateOptionalConsentRequirement
+        );
+        
+        // 페이지 로드 시에도 한 번 확인
+        updateOptionalConsentRequirement();
+        
     </script>
         
 </body>
