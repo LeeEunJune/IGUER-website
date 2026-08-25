@@ -1096,3 +1096,280 @@ a {
         min-height: 66px;
     }
 }
+
+/* =========================
+   JOIN IGUER
+========================= */
+
+.join-main {
+    width: min(1420px, 82%);
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+.join-section {
+    padding: 3.2rem 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.join-section-heading {
+    max-width: 1100px;
+    margin-bottom: 2rem;
+}
+
+.join-section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.join-section-heading > p {
+    max-width: 850px;
+    margin-top: 0.8rem;
+
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* MEMBERSHIP STRUCTURE */
+
+.membership-levels {
+    border-top: 1px solid #cfcfcf;
+}
+
+.membership-level {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(400px, 2.2fr);
+    gap: 4rem;
+
+    padding: 1.45rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.membership-name h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.membership-description {
+    max-width: 850px;
+}
+
+.membership-description p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.membership-note {
+    max-width: 900px;
+    margin-top: 1.5rem;
+
+    color: #666666;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+
+/* APPLICATION FORM */
+
+.application-form {
+    max-width: 1100px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.7rem 2.5rem;
+}
+
+.form-field {
+    min-width: 0;
+}
+
+.form-wide {
+    grid-column: 1 / -1;
+}
+
+.form-field label,
+.form-field legend {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    color: #222222;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="url"],
+.form-field select,
+.form-field textarea {
+    width: 100%;
+
+    padding: 0.85rem 0.9rem;
+
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 0;
+
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+
+    outline: none;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 125px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #06264a;
+}
+
+.field-description {
+    margin-top: 0.45rem;
+
+    color: #777777;
+    font-size: 0.76rem;
+    line-height: 1.6;
+}
+
+
+/* RADIO */
+
+.radio-field {
+    padding: 1.3rem 0;
+
+    border: 0;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.radio-field legend {
+    padding-top: 1rem;
+}
+
+.radio-options {
+    display: flex;
+    gap: 2rem;
+
+    margin-top: 0.9rem;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    margin: 0;
+
+    font-weight: 400;
+}
+
+
+/* OPTIONAL */
+
+.optional-heading {
+    margin-top: 1rem;
+    padding-top: 1.8rem;
+
+    border-top: 1px solid #cfcfcf;
+}
+
+.optional-heading h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.optional-heading p {
+    max-width: 850px;
+    margin-top: 0.6rem;
+
+    color: #666666;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.optional-label {
+    margin-left: 0.5rem;
+
+    color: #888888;
+    font-size: 0.68rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* SUBMIT */
+
+.form-submit {
+    margin-top: 2.5rem;
+}
+
+.form-submit button {
+    padding: 0.9rem 1.8rem;
+
+    background: #06264a;
+    border: 1px solid #06264a;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82rem;
+
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background: #ffffff;
+    color: #06264a;
+}
+
+.form-submit p {
+    max-width: 700px;
+    margin-top: 0.9rem;
+
+    color: #777777;
+    font-size: 0.72rem;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    .join-main {
+        width: 88%;
+    }
+
+    .join-section {
+        padding: 2.5rem 0;
+    }
+
+    .membership-level {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-wide {
+        grid-column: auto;
+    }
+}
