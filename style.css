@@ -560,12 +560,7 @@ a {
 }
 
 .about-section {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 3rem;
-
-    padding: 5.5rem 0;
-
+    padding: 3.8rem 0;
     border-bottom: 1px solid #d7d7d7;
 }
 
@@ -578,7 +573,7 @@ a {
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .about-content h2 {
