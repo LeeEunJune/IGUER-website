@@ -577,7 +577,7 @@ a {
 }
 
 .about-content h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(2rem, 3vw, 3rem);
@@ -605,7 +605,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 
     border-top: 1px solid #d7d7d7;
 }
