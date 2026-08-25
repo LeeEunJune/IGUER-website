@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join IGUER | International Group for Undergraduate Engineering Research</title>
+
+    <meta name="description"
+          content="Apply to join the International Group for Undergraduate Engineering Research (IGUER).">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="brand">IGUER</a>
+
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="research.html">Research &amp; Publications</a>
+                <a href="members.html">Members &amp; Academic Advisors</a>
+                <a href="join.html" class="active">Join IGUER</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+
+            <h1>Join IGUER</h1>
+
+            <p>
+                Join an international community of undergraduate
+                engineering researchers and develop your research
+                through collaboration.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- MAIN -->
+    <main class="join-main">
+
+
+        <!-- MEMBERSHIP STRUCTURE -->
+        <section class="join-section">
+
+            <div class="join-section-heading">
+                <h2>Membership Structure</h2>
+
+                <p>
+                    IGUER members participate at different levels according
+                    to their research experience and academic record.
+                </p>
+            </div>
+
+
+            <div class="membership-levels">
+
+                <article class="membership-level">
+
+                    <div class="membership-name">
+                        <h3>Senior Member</h3>
+                    </div>
+
+                    <div class="membership-description">
+                        <p>
+                            Members with substantial research and publication
+                            experience who may contribute to research leadership,
+                            internal review, and mentoring activities.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="membership-level">
+
+                    <div class="membership-name">
+                        <h3>Researcher Member</h3>
+                    </div>
+
+                    <div class="membership-description">
+                        <p>
+                            Members with established research or publication
+                            experience who actively participate in research
+                            projects and academic review activities.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="membership-level">
+
+                    <div class="membership-name">
+                        <h3>Junior Member</h3>
+                    </div>
+
+                    <div class="membership-description">
+                        <p>
+                            Members developing their research experience through
+                            collaborative projects, academic interaction, and
+                            mentoring within IGUER.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="membership-note">
+                Membership level is determined based on research experience
+                and publication record. Applicants may initially join as
+                Junior Members and later advance to Researcher or Senior
+                Member status.
+            </p>
+
+        </section>
+
+
+        <!-- APPLICATION -->
+        <section class="join-section application-section">
+
+            <div class="join-section-heading">
+
+                <h2>Application Form</h2>
+
+                <p>
+                    Complete the form below to apply for membership.
+                    Required fields are marked with an asterisk (*).
+                </p>
+
+            </div>
+
+
+            <!-- Form action will be connected later -->
+            <form class="application-form" method="POST">
+
+
+                <div class="form-grid">
+
+                    <!-- NAME -->
+                    <div class="form-field">
+                        <label for="full-name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            required>
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-field">
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                    </div>
+
+
+                    <!-- UNIVERSITY -->
+                    <div class="form-field">
+                        <label for="university">
+                            University / Institution *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="university"
+                            name="university"
+                            required>
+                    </div>
+
+
+                    <!-- COUNTRY -->
+                    <div class="form-field">
+                        <label for="country">
+                            Country *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            required>
+                    </div>
+
+
+                    <!-- MAJOR -->
+                    <div class="form-field">
+                        <label for="major">
+                            Major / Department *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="major"
+                            name="major"
+                            required>
+                    </div>
+
+
+                    <!-- YEAR -->
+                    <div class="form-field">
+                        <label for="year">
+                            Year of Study *
+                        </label>
+
+                        <select id="year" name="year_of_study" required>
+                            <option value="" selected disabled>
+                                Select
+                            </option>
+
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                            <option value="5+">5th Year or Above</option>
+                        </select>
+                    </div>
+
+
+                    <!-- RESEARCH INTERESTS -->
+                    <div class="form-field form-wide">
+                        <label for="research-interests">
+                            Research Interests *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="research-interests"
+                            name="research_interests"
+                            placeholder="e.g. Fluid dynamics, robotics, energy systems"
+                            required>
+                    </div>
+
+
+                    <!-- PREFERRED FIELD -->
+                    <div class="form-field form-wide">
+                        <label for="preferred-field">
+                            Preferred Research Field *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="preferred-field"
+                            name="preferred_research_field"
+                            required>
+                    </div>
+
+
+                    <!-- PUBLICATION EXPERIENCE -->
+                    <fieldset class="form-field form-wide radio-field">
+
+                        <legend>
+                            Publication Experience *
+                        </legend>
+
+                        <p class="field-description">
+                            Have you previously authored or co-authored
+                            an academic publication?
+                        </p>
+
+                        <div class="radio-options">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="publication_experience"
+                                    value="Yes"
+                                    required>
+                                Yes
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="publication_experience"
+                                    value="No">
+                                No
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- OPTIONAL INFORMATION -->
+                    <div class="optional-heading form-wide">
+
+                        <h3>
+                            Optional information for membership classification
+                        </h3>
+
+                        <p>
+                            The following information is optional for general
+                            membership applications. Materials provided may be
+                            considered when evaluating eligibility for Researcher
+                            or Senior Member status.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MOTIVATION -->
+                    <div class="form-field form-wide">
+
+                        <label for="motivation">
+                            Short Motivation
+                            <span class="optional-label">Optional</span>
+                        </label>
+
+                        <textarea
+                            id="motivation"
+                            name="short_motivation"
+                            rows="5"
+                            placeholder="Briefly describe your research interests and motivation for joining IGUER."></textarea>
+
+                    </div>
+
+
+                    <!-- CV / PORTFOLIO -->
+                    <div class="form-field form-wide">
+
+                        <label for="portfolio">
+                            CV / Research Portfolio Link
+                            <span class="optional-label">Optional</span>
+                        </label>
+
+                        <input
+                            type="url"
+                            id="portfolio"
+                            name="portfolio_url"
+                            placeholder="https://">
+
+                        <p class="field-description">
+                            You may provide a publicly accessible link to a CV,
+                            research portfolio, or academic profile.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-submit">
+
+                    <button type="submit">
+                        Submit Application
+                    </button>
+
+                    <p>
+                        The information submitted through this form will be
+                        used for membership application and review purposes.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-identity">
+
+                <strong>IGUER</strong>
+
+                <p>
+                    International Group for<br>
+                    Undergraduate Engineering Research
+                </p>
+
+                <div class="footer-line"></div>
+
+                <a href="mailto:contact@iguer.org">
+                    contact@iguer.org
+                </a>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <nav class="footer-nav">
+                    <a href="about.html">About</a>
+                    <a href="research.html">Research &amp; Publications</a>
+                    <a href="members.html">Members &amp; Academic Advisors</a>
+                    <a href="join.html">Join IGUER</a>
+                </nav>
+
+                <p class="copyright">
+                    © 2026 IGUER. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
