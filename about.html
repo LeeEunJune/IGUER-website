@@ -20,6 +20,12 @@
 
             <a href="index.html" class="brand">IGUER</a>
 
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="nav-links">
                 <a href="about.html" class="active">About</a>
                 <a href="research.html">Research &amp; Publications</a>
@@ -232,6 +238,14 @@
 
     </footer>
 
-
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+    
 </body>
 </html>
