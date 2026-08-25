@@ -1376,6 +1376,43 @@ a {
 }
 
 /* =========================
+   MEMBERSHIP FEE NOTICE
+========================= */
+
+.membership-fee-notice {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #d8d8d5;
+}
+
+.membership-fee-notice h3 {
+    margin: 0 0 0.6rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: #111111;
+}
+
+.membership-fee-notice p {
+    margin: 0 0 0.35rem;
+
+    font-size: 0.9rem;
+    line-height: 1.65;
+
+    color: #666666;
+}
+
+.membership-fee-notice p:last-child {
+    margin-bottom: 0;
+}
+
+.membership-fee-notice .fee-note {
+    color: #666666;
+}
+
+/* =========================
    PRIVACY CONSENT
 ========================= */
 
