@@ -14,10 +14,10 @@
 
 <body>
 
-    <!-- HERO -->
-    <header class="hero">
-
+    <!-- TOP NAVIGATION -->
+    <header class="site-header">
         <nav class="navbar">
+
             <a href="index.html" class="brand">IGUER</a>
 
             <div class="nav-links">
@@ -27,98 +27,203 @@
                 <a href="#">Events</a>
                 <a href="#">Join IGUER</a>
             </div>
+
         </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
 
         <div class="hero-content">
-            <p class="eyebrow">IGUER</p>
 
             <h1>
                 International Group for<br>
-                Undergraduate Engineering Research
+                Undergraduate Engineering<br>
+                Research
             </h1>
+
+            <div class="hero-line"></div>
 
             <p class="hero-description">
                 An international nonprofit organization supporting
                 undergraduate engineering research, interdisciplinary
                 collaboration, and academic publication.
             </p>
+
         </div>
 
-    </header>
+    </section>
 
 
-    <!-- MAIN CONTENT -->
-    <main>
+    <!-- HOME CONTENT -->
+    <main class="home-grid">
 
         <!-- UPCOMING EVENTS -->
-        <section class="section">
+        <section class="home-column">
+
             <div class="section-header">
                 <h2>Upcoming Events</h2>
                 <a href="#">View all events →</a>
             </div>
 
-            <div class="event-row">
+            <div class="section-rule"></div>
+
+            <article class="event">
+
                 <div class="event-date">
                     <span class="month">DEC</span>
                     <span class="day">17–19</span>
                     <span class="year">2026</span>
                 </div>
 
-                <div class="event-info">
-                    <h3>International Conference</h3>
-                    <p>Academic event information will be announced.</p>
+                <div class="event-content">
+                    <h3>
+                        International Conference on Computational Science
+                        and Engineering for Society 2026
+                    </h3>
+
+                    <p>
+                        Hybrid Conference<br>
+                        Athens, Greece & Online
+                    </p>
                 </div>
 
-                <span class="arrow">→</span>
-            </div>
+            </article>
+
+            <div class="item-rule"></div>
+
+            <a href="#" class="bottom-link">View all events →</a>
+
         </section>
 
 
         <!-- RECENT PUBLICATIONS -->
-        <section class="section">
+        <section class="home-column">
+
             <div class="section-header">
                 <h2>Recent Publications</h2>
                 <a href="#">View all publications →</a>
             </div>
 
-            <article class="publication-row">
-                <div>
-                    <p class="category">Mechanical Engineering</p>
+            <div class="section-rule"></div>
 
-                    <h3>
-                        Research publications by IGUER members
-                        will be presented here.
-                    </h3>
+            <article class="publication">
 
-                    <p class="metadata">
-                        Journal / Proceedings · 2026
-                    </p>
-                </div>
+                <h3>
+                    Design and Analysis of a Cross-plane Solenoid Engine
+                    for Torque Ripple Stability in Electric Vehicles
+                </h3>
 
-                <span class="arrow">→</span>
+                <p class="journal">
+                    SSRG International Journal of Mechanical Engineering
+                </p>
+
+                <p class="year-small">2026</p>
+
             </article>
+
+            <div class="item-rule"></div>
+
+            <article class="publication">
+
+                <h3>
+                    Validation of Lift Modeling Accuracy in Python
+                    Through Paper Airplane Flight Behavior Analysis
+                </h3>
+
+                <p class="journal">engrXiv Preprint</p>
+
+                <p class="year-small">2025</p>
+
+            </article>
+
+            <div class="item-rule"></div>
+
+            <article class="publication">
+
+                <h3>
+                    Computational State Point Framework for Early-time
+                    Shockwave Analysis without Field Discretization
+                </h3>
+
+                <p class="journal">
+                    ICONS2026 Proceedings (Accepted)
+                </p>
+
+                <p class="year-small">2026</p>
+
+            </article>
+
+            <div class="item-rule"></div>
+
+            <a href="#" class="bottom-link">View all publications →</a>
+
         </section>
 
 
         <!-- RESEARCH IN PROGRESS -->
-        <section class="section">
+        <section class="home-column">
+
             <div class="section-header">
                 <h2>Research in Progress</h2>
                 <a href="#">View all research →</a>
             </div>
 
-            <div class="research-row">
-                <div>
-                    <p class="category">Engineering Research</p>
-                    <h3>Current IGUER Research Project</h3>
-                    <p>
-                        Ongoing collaborative research conducted by
-                        undergraduate researchers.
-                    </p>
+            <div class="section-rule"></div>
+
+            <article class="research">
+
+                <p class="category">MECHANICAL ENGINEERING</p>
+
+                <div class="research-title-row">
+                    <h3>
+                        Hybrid Hydrogen-based<br>
+                        Wave Disk Engine (HWDE)
+                    </h3>
+
+                    <span class="status">IN PROGRESS</span>
                 </div>
 
-                <span class="status">IN PROGRESS</span>
-            </div>
+            </article>
+
+            <div class="item-rule"></div>
+
+            <article class="research">
+
+                <p class="category">COMPUTATIONAL ENGINEERING</p>
+
+                <div class="research-title-row">
+                    <h3>
+                        Computational State Point (CSP)<br>
+                        Framework Development
+                    </h3>
+
+                    <span class="status">IN PROGRESS</span>
+                </div>
+
+            </article>
+
+            <div class="item-rule"></div>
+
+            <article class="research">
+
+                <p class="category">ELECTRICAL ENGINEERING</p>
+
+                <div class="research-title-row">
+                    <h3>
+                        Wheel-based Electromagnetic<br>
+                        Energy Harvester
+                    </h3>
+
+                    <span class="status">IN PROGRESS</span>
+                </div>
+
+            </article>
+
+            <div class="item-rule"></div>
+
+            <a href="#" class="bottom-link">View all research →</a>
 
         </section>
 
@@ -126,17 +231,46 @@
 
 
     <!-- FOOTER -->
-    <footer>
-        <div>
-            <strong>IGUER</strong>
-            <p>
-                International Group for Undergraduate Engineering Research
-            </p>
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-identity">
+
+                <strong>IGUER</strong>
+
+                <p>
+                    International Group for<br>
+                    Undergraduate Engineering Research
+                </p>
+
+                <div class="footer-line"></div>
+
+                <a href="mailto:contact@iguer.org">
+                    contact@iguer.org
+                </a>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <nav class="footer-nav">
+                    <a href="#">About</a>
+                    <a href="#">Research & Publications</a>
+                    <a href="#">Members & Academic Advisors</a>
+                    <a href="#">Events</a>
+                    <a href="#">Join IGUER</a>
+                </nav>
+
+                <p class="copyright">
+                    © 2026 IGUER. All rights reserved.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="footer-right">
-            <p>© 2026 IGUER</p>
-        </div>
     </footer>
 
 </body>
