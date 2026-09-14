@@ -1512,6 +1512,34 @@ a {
     flex-shrink: 0;
 }
 
+/* APPLICATION EMAIL NOTICE */
+
+.application-email-notice {
+    margin-top: 2.2rem;
+    padding: 1.2rem 1.4rem;
+
+    background: #f7f7f5;
+    border-left: 3px solid #06264a;
+
+    color: #555555;
+
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.application-email-notice p {
+    margin: 0 0 0.7rem;
+}
+
+.application-email-notice p:last-child {
+    margin-bottom: 0;
+}
+
+.application-email-notice strong {
+    color: #222222;
+    font-weight: 600;
+}
+
 /* SUBMIT */
 
 .form-submit {
