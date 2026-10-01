@@ -315,11 +315,32 @@ a {
     gap: 1rem;
 }
 
+.research-status {
+    margin-bottom: 0.9rem;
+
+    color: #174d78;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
 .research h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.45;
+}
+
+.research-info {
+    margin-top: 0.35rem;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #555555;
 }
 
 .status {
