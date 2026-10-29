@@ -1012,6 +1012,147 @@ a {
 }
 
 /* =========================
+   TECHNICAL REPORTS
+========================= */
+
+.technical-report {
+    margin-top: 1.5rem;
+    padding: 1.8rem;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.tr-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    color: #777777;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+.tr-number,
+.tr-badges span,
+.tr-file-tag {
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    background: #f1f1f1;
+    color: #333333;
+    font-size: 0.76rem;
+    font-weight: 500;
+}
+
+.technical-report h2 {
+    max-width: 1050px;
+    margin-top: 1.2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.tr-meta {
+    margin-top: 0.7rem;
+    color: #777777;
+    font-size: 0.85rem;
+}
+
+.tr-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.9rem;
+}
+
+.tr-files {
+    margin-top: 1.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.tr-files h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tr-file {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0.4rem;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.tr-file:hover {
+    background: #f8f9fa;
+}
+
+.tr-file-icon {
+    flex-shrink: 0;
+    color: #777777;
+    font-size: 1.5rem;
+}
+
+.tr-file-info {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.tr-file-info strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.tr-file-info small {
+    color: #777777;
+    font-size: 0.78rem;
+    overflow-wrap: anywhere;
+}
+
+.tr-file-tag {
+    flex-shrink: 0;
+}
+
+.tr-note {
+    margin-top: 1.5rem;
+    color: #777777;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+/* TECHNICAL REPORTS MOBILE */
+
+@media (max-width: 760px) {
+
+    .technical-report {
+        padding: 1.2rem;
+    }
+
+    .tr-file {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+
+    .tr-file-tag {
+        margin-left: auto;
+    }
+
+    .tr-topline {
+        align-items: flex-start;
+    }
+}
+
+/* =========================
    MEMBERS & ADVISORS PAGE
 ========================= */
 
